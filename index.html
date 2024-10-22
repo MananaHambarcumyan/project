@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto auto auto; 
+  gap: 10px; 
+  color: rgb(39, 39, 37);
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.itemA {
+  grid-column: 1 / span 2;  
+  background-color: yellow;
+  height: 100px;
+}
+
+.itemB {
+  grid-column: 1 / span 1; 
+  background-color: yellow;
+  grid-row: 2 / span 2; 
+}
+
+.itemC {
+  grid-column: 2 / span 1; 
+  background-color: yellow;
+  height: 100px;
+}
+
+.itemD {
+  grid-column: 2 / span 1; 
+  background-color: yellow;
+  height: 100px;
+}
+
+.itemE {
+  grid-column: 1 / span 2; 
+  background-color: yellow;
+  height: 100px;
+}
+
+</style>
+<body>
+    
+<div class="container">
+    <div class="itemA">A</div>
+    <div class="itemB">B</div>
+    <div class="itemC">C</div>
+    <div class="itemD">D</div>
+    <div class="itemE">E</div>
+</div>
+      
+
+</body>
+</html>
