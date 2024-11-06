@@ -1,15 +1,15 @@
-// function customFilter(array, callback) {
-//     const filteredArray = [];
-//     for (let i = 0; i < array.length; i++) {
-//       if (callback(array[i], i, array)) {
-//         filteredArray.push(array[i]);
-//       }
-//     }
-//     return filteredArray;
-// }
-// const numbers = [5, 10, 15, 20];
-// const result = customFilter(numbers, (num) => num > 10);
-// console.log(result); // [15, 20]
+function customFilter(array, callback) {
+    const filteredArray = [];
+    for (let i = 0; i < array.length; i++) {
+      if (callback(array[i], i, array)) {
+        filteredArray.push(array[i]);
+      }
+    }
+    return filteredArray;
+}
+const numbers = [5, 10, 15, 20];
+const result = customFilter(numbers, (num) => num > 10);
+console.log(result); // [15, 20]
 
 // Task 2: Custom ForEach Function
 function customForEach(array, callback) {
