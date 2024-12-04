@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack and Queue</title>
+  <link rel="stylesheet" href="src/styles/app.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Structures: Stack and Queue</h1>
+    
+    <div class="structure stack">
+      <h2>Stack (FILO)</h2>
+      <div id="stack-display" class="display"></div>
+      <div class="controls">
+        <input type="text" id="stack-input" placeholder="Enter item">
+        <button onclick="pushToStack()">Push</button>
+        <button onclick="popFromStack()">Pop</button>
+        <button onclick="clearStack()">Clear</button>
+      </div>
+    </div>
+    
+    <div class="structure queue">
+      <h2>Queue (FIFO)</h2>
+      <div id="queue-display" class="display"></div>
+      <div class="controls">
+        <input type="text" id="queue-input" placeholder="Enter item">
+        <button onclick="enqueueToQueue()">Enqueue</button>
+        <button onclick="dequeueFromQueue()">Dequeue</button>
+        <button onclick="clearQueue()">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/scripts/app.js"></script>
+</body>
+</html>
